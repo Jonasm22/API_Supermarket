@@ -9,7 +9,7 @@ import lombok.*;
 @Builder
 public class SaleDetailsDTO {
 
-    private Long productId;
+    private Long id;
     private String productName;
     private Integer quantityProduct;
     private Double priceUnit; // BigDecimal

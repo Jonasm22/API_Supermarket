@@ -35,7 +35,7 @@ public class Mappers {
         var detail = saleEntity.getDetails().stream().map(saleDetails ->
 
                 SaleDetailsDTO.builder()
-                        .productId(saleDetails.getProduct().getId())
+                        .id(saleDetails.getProduct().getId())
                         .productName(saleDetails.getProduct().getName())
                         .quantityProduct(saleDetails.getQuantityProduct())
                         .priceUnit(saleDetails.getUnitPrice())
